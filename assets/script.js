@@ -11,9 +11,25 @@
 
      $('.bxslider').bxSlider({
          auto: true,
-        autoControls: true
+        autoControls: true,
+        default: false,
+        options: false
       });
 
+     
+                $('#map_canvas').gmap3({
+                    marker:{
+                        address: '20.6626928,-103.3608808'
+                    },
+                        map:{
+                        options:{
+                        zoom: 15,
+                        scrollwheel: false,
+                        streetViewControl : true
+                        }
+                    }
+                });
+           
 
 
 
